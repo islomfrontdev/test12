@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://mini-io-api.texnomart.uz/newcontent/slider/45/1khTbU6m3c4OLxljIAg3ENZeBAZyo8JYbtxIlzDl.webp"
+            alt=""
+            title="Img"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://mini-io-api.texnomart.uz/newcontent/slider/62/4503VDU86FOxQ94JejprgdTmh1MHIpEAndJz6EDt.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://mini-io-api.texnomart.uz/newcontent/slider/53/w64ujtqHbRlgLCOb48wTbjdei7Vnuf589r7ByKA1.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-slide my-2">
+          <div class="shadow p-3 rounded">
+            <img
+              src="https://mini-io-api.texnomart.uz/catalog/special-brands/71/bef78df5-ec23-4e0c-aef4-80127a7447a6.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 8,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
